@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class Main {
+	  public static void main(String args[]){
+	    
+	    while (true) {
+	    	Scanner degree=new Scanner(System.in);
+		    System.out.println("Do you have a diploma? Please type yes or no :)");
+		    String degreeCheck=degree.nextLine();
+	    	if (degreeCheck.equals("yes")) {
+	    	Scanner degree2=new Scanner(System.in);
+	    	System.out.println("What is your GPA?");
+	    	float gpa=degree2.nextFloat();
+	    		if (gpa>=3.5) {
+	    			System.out.println("You are eligible for scholarship");
+	    			break;
+	    			}
+	    		else {
+	    			 			System.out.println("You should have studied harder");
+	    			 		break;
+	    			 		}
+	    	    }
+	    	else if(degreeCheck.equals("no")) {
+	    	System.out.println("You suppose to get a degree first");
+	    	  break;
+	    	  }
+	    	else {
+	    		System.out.println("Please just type yes or no");
+	    		}
+	    }
+	  }
+}
