@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Main{
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("What is the rate you ask for the loan?");
+	float mortgageRate=sc.nextFloat();
+		if (mortgageRate<4.5) {
+			Scanner sc1=new Scanner(System.in);
+			System.out.println("What is the price of the house?");
+			int price=sc1.nextInt();
+				if (price>200000) {
+					System.out.println("Okay, I want to take the loan");
+				}
+				else {
+					System.out.println("Okay, I will pay in cash");
+						
+					}
+				
+		}
+		else {
+			System.out.println("Oh, I will not buy the house");
+		}
+		
+		
+	}
+}
